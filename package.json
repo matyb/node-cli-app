@@ -1,0 +1,26 @@
+{
+  "name": "node-cli-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node node_modules/jasmine/bin/jasmine.js src/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matyb/node-cli-app.git"
+  },
+  "author": "Mat Bentley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matyb/node-cli-app/issues"
+  },
+  "homepage": "https://github.com/matyb/node-cli-app#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
+    "proxyquire": "^2.0.1",
+    "shelljs": "^0.8.1"
+  }
+}
