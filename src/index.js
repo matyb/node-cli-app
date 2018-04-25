@@ -4,8 +4,9 @@ let instance = module.exports = {
       filePath = "repos.txt";
     }
     return String(require("fs").readFileSync(filePath))
-              .split("\n")
-              .filter(function(el) {return el.length != 0});
+              .split("(\r|\n)")
+              .filter(function(el) {return el.length != 0;})
+              .map(function(line) {return line.trim();});
   },
   clone : function clone (repository){
     if (clone.arguments.length === 0) {
